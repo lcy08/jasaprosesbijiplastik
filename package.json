@@ -1,8 +1,8 @@
 {
-  "name": "company-website",
+  "name": "jasaprosesbijiplastik",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://jasaprosesbijiplastik.biz.id",
+  "homepage": "https://jasaprosesbijiplastik.biz.id/",
   "description": "Jasa Proses Biji Plastik - Website",
   "keywords": [
     "Proses Biji Plastik",
@@ -19,6 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
