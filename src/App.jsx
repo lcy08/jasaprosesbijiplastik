@@ -1,6 +1,7 @@
-import Header from './Header';
-import Content from './Content';
-import Footer from './Footer';
+import Header from './components/Header';
+import Hero from './components/Hero'
+import Compare from './components/Compare'
+import Footer from './components/Footer';
 import './index.css';
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
   return(
     <>
     <Header />
-    <Content />
+    <Hero />
+    <Compare />
+    <section className="min-h-screen"></section>
     <Footer />
     </>
   );

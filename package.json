@@ -2,7 +2,7 @@
   "name": "jasaprosesbijiplastik",
   "private": true,
   "version": "0.0.0",
-  "homepage": "jasaprosesbijiplastik.biz.id",
+  "homepage": "https://jasaprosesbijiplastik.biz.id/",
   "description": "Jasa Proses Biji Plastik - Website",
   "keywords": [
     "Proses Biji Plastik",
@@ -21,7 +21,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -30,6 +30,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "aos": "^2.3.4",
     "postcss": "^8.5.6",
+    "prop-types": "^15.8.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.11"
