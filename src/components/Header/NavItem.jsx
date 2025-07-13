@@ -1,7 +1,5 @@
 import propTypes from 'prop-types';
 
-
-
 function NavItem ({ children, href, className = '', ...props }) {
   return (
     <li className={`nav-item pr-2 pb-1 justify-center items-center text-end md:text-center ${className}`} {...props}>
