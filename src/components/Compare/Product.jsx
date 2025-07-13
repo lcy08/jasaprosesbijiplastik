@@ -19,14 +19,14 @@ function Product (props){
                 </p>
 
                 <a
-                className="mt-4 block rounded-sm border border-green-400 bg-green-300 px-12 py-3 text-center text-sm font-medium text-green-950 hover:bg-transparent hover:text-green-400 focus:ring-3 focus:outline-hidden sm:mt-6"
+                className="mt-4 block rounded-xl border border-green-600 bg-background px-12 py-3 text-center text-sm font-medium text-green-100 hover:bg-transparent hover:text-green-900 focus:ring-3 focus:outline-hidden sm:mt-6 transition-colors duration-200 ease-out"
                 href="#"
                 >
                 Buy
                 </a>
             </div>
 
-            <div className="p-6 sm:px-8 bg-jungle-green-100">
+            <div className="p-6 sm:px-8 bg-green-100">
                 <p className="text-lg font-medium text-gray-900 sm:text-xl">Qualities:</p>
 
                 <ul className="mt-2 space-y-2 sm:mt-4">

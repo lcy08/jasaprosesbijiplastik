@@ -4,8 +4,8 @@ function Hero(){
         <section className="overflow-hidden bg-green-100 sm:grid sm:grid-cols-2 sm:items-center font-playfair">
             <div className="p-8 md:p-12 lg:px-16 lg:py-24">
                 <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-                    <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    <h2 className="text-2xl font-bold text-jungle-green-900 md:text-3xl">
+                        Lorem, <span className="bg-green-800 text-green-100">ipsum dolor sit</span> amet consectetur adipisicing elit
                     </h2>
 
                     <p className="hidden text-gray-500 md:mt-4 md:block">
@@ -17,7 +17,7 @@ function Hero(){
                     <div className="mt-4 md:mt-8">
                         <a
                         href="#"
-                        className="inline-block rounded-sm bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
+                        className="inline-block rounded-xl bg-background px-12 py-3 text-sm font-medium text-white transition hover:scale-110 hover:-rotate-2 focus:ring-3 focus:outline-hidden"
                         >
                         Get Started Today
                         </a>

@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-gradient-to-t from-gray-600 to-background text-white py-4 mx-9 rounded-t-2xl">
+    <footer className="bg-background text-white py-4 mx-9 rounded-t-2xl">
       <div className="container mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} Jasa Proses Biji Plastik. All rights reserved.</p>
         <p>Follow us on
