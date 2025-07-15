@@ -95,7 +95,7 @@ function PictureSect() {
         {!isMobile && (
           <div
             className="sticky top-24 self-start h-fit flex flex-col justify-start py-10"
-          >
+          aria-live="polite">
             <AnimatePresence mode="wait">
               <motion.img
                 key={pictures[activeIndex].id}
@@ -112,7 +112,6 @@ function PictureSect() {
                 transition={{ duration: 0.3 }}
                 className="rounded-lg shadow-xl w-full max-w-xl ring-4 ring-green-200"
                 alt={pictures[activeIndex].title}
-                aria-live="polite"
                 loading="lazy"
               />
             </AnimatePresence>
