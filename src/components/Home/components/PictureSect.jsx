@@ -38,10 +38,16 @@ function PictureSect() {
     }, []);
 
     useEffect(() => {
-        if (contentRef.current) {
-            setContentHeight(contentRef.current.offsetHeight);
-        }
-    }, [isMobile, activeIndex, pictures.length]);
+        // Only update contentHeight after resize or initial mount
+        const updateHeight = () => {
+            if (contentRef.current) {
+                setContentHeight(contentRef.current.offsetHeight);
+            }
+        };
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
+        return () => window.removeEventListener('resize', updateHeight);
+    }, [isMobile, pictures.length]);
 
     useEffect(() => {
         if (isMobile) return;
@@ -116,13 +122,16 @@ function PictureSect() {
         {/* Content */}
         <div className="flex flex-col gap-16 py-10" ref={contentRef}>
           {pictures.map((picture, index) => (
-            <div
+            <motion.div
               key={picture.id}
               ref={(el) => (itemRefs.current[index] = el)}
               className={`px-4 md:px-12 max-w-7xl mx-auto transition-shadow duration-300${!isMobile && activeIndex === index ? ' ring-2 ring-green-700 bg-amber-50/50 shadow-lg rounded-2xl' : ''}`}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
             >
               <PictureDiv title={picture.title} desc={picture.desc} image={picture.image} />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
