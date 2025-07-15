@@ -10,6 +10,7 @@ function PictureDiv({ title, desc, image }) {
           src={image}
           alt={title}
           className="md:hidden rounded-lg w-full max-w-md ring-4 ring-green-200"
+          loading="lazy"
         />
       </div>
     </div>
