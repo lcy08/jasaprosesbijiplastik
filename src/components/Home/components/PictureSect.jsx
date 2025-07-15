@@ -6,6 +6,8 @@ function PictureSect() {
     const itemRefs = useRef([]);
     const [activeIndex, setActiveIndex] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
+    const contentRef = useRef(null);
+    const [contentHeight, setContentHeight] = useState(undefined);
 
     const pictures = [
         {
@@ -34,6 +36,12 @@ function PictureSect() {
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
+
+    useEffect(() => {
+        if (contentRef.current) {
+            setContentHeight(contentRef.current.offsetHeight);
+        }
+    }, [isMobile, activeIndex, pictures.length]);
 
     useEffect(() => {
         if (isMobile) return;
@@ -79,7 +87,9 @@ function PictureSect() {
       <div className="max-w-7xl mx-auto px-4 md:px-12 grid md:grid-cols-2 gap-8 relative">
         {/* Sticky image */}
         {!isMobile && (
-          <div className="sticky top-24 self-start h-fit">
+          <div
+            className="sticky top-24 self-start h-fit flex flex-col justify-start py-10"
+          >
             <AnimatePresence mode="wait">
               <motion.img
                 key={pictures[activeIndex].id}
@@ -97,7 +107,7 @@ function PictureSect() {
         )}
 
         {/* Content */}
-        <div className="flex flex-col gap-16 py-10">
+        <div className="flex flex-col gap-16 py-10" ref={contentRef}>
           {pictures.map((picture, index) => (
             <div
               key={picture.id}

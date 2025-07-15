@@ -82,7 +82,7 @@ function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center space-y-4"
         >
-            <h1 className="text-4xl font-extrabold">Hubungi Kami</h1>
+            <h1 className="text-4xl font-extrabold font-playfair">Hubungi Kami</h1>
             <p className="text-lg max-w-2xl mx-auto">
             Kami siap membantu Anda. Pilih metode kontak di bawah atau kirim pesan
             langsung melalui formulir.
