@@ -93,7 +93,13 @@ function PictureSect() {
             <AnimatePresence mode="wait">
               <motion.img
                 key={pictures[activeIndex].id}
-                src={pictures[activeIndex].image}
+                src={pictures[activeIndex].image.replace(/w=800/, 'w=600')}
+                srcSet={`
+                  ${pictures[activeIndex].image.replace(/w=800/, 'w=400')} 400w,
+                  ${pictures[activeIndex].image.replace(/w=800/, 'w=800')} 800w,
+                  ${pictures[activeIndex].image.replace(/w=800/, 'w=1200')} 1200w
+                `}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
