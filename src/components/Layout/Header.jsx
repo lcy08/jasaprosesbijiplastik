@@ -35,6 +35,7 @@ function Header() {
                       src="https://placehold.co/40x40/222/fff?text=JP"
                       alt="Jasa Proses Biji Plastik Logo"
                       className="h-8 w-8 md:h-10 md:w-10 object-contain"
+                      loading="lazy"
                     />
                   </span>
                 </div>
@@ -50,7 +51,7 @@ function Header() {
                   className="w-full md:w-auto"
                 >
                   <div
-                    className={`items-center justify-start md:justify-center w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
+                    className={`items-center justify-start md:justify-center md:mr-8 w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
                      ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}`}
                     id="navbar"
                     aria-expanded={isMenuOpen}

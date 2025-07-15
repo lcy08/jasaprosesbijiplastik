@@ -101,6 +101,7 @@ function PictureSect() {
                 className="rounded-lg shadow-xl w-full max-w-xl ring-4 ring-green-200"
                 alt={pictures[activeIndex].title}
                 aria-live="polite"
+                loading="lazy"
               />
             </AnimatePresence>
           </div>
