@@ -1,5 +1,6 @@
 import Header from '/src/components/Layout/Header';
 import Hero from './components/Hero';
+<<<<<<< HEAD
 import Who from './components/Who';
 import TickerGallery from './components/TickerGallery';
 import Footer from '/src/components/Layout/Footer';
@@ -7,10 +8,18 @@ import BackTop from '../Layout/BackTop'
 import { Helmet } from 'react-helmet-async';
 import '/src/index.css';
 import RevealOnScroll from '../Layout/RevealOnScroll';
+=======
+import Compare from './components/Compare';
+import PictureSect from './components/PictureSect';
+import LocationGallery from './components/LocationGallery';
+import Footer from '/src/components/Layout/Footer';
+import '/src/index.css';
+>>>>>>> dde4f7d (Router)
 
 function Home() {
   return(
     <>
+<<<<<<< HEAD
       <Helmet>
         {/* Title & Description */}
         <title>MP. PLAST - Jasa Proses Biji Plastik Termurah | Pengolahan Plastik Berkualitas</title>
@@ -90,6 +99,13 @@ function Home() {
       <RevealOnScroll delay={0.2}>
         <TickerGallery />
       </RevealOnScroll>
+=======
+      <Header />
+      <Hero />
+      <Compare />
+      <PictureSect />
+      <LocationGallery />
+>>>>>>> dde4f7d (Router)
       <Footer />
     </>
   );
