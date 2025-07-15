@@ -62,7 +62,7 @@ function About() {
             transition={{ duration: 0.6 }}
             className="text-center space-y-4"
         >
-            <h1 className="text-4xl font-extrabold">Tentang Kami</h1>
+            <h1 className="text-4xl font-extrabold font-playfair">Tentang Kami</h1>
             <p className="text-lg">
             Kami adalah penyedia jasa pengolahan biji plastik ramah lingkungan
             berkualitas tinggi. Berdiri sejak <span className="font-semibold">20XX</span>,
