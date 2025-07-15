@@ -29,7 +29,7 @@ function Footer() {
           <span className="block">Telp: <a href="tel:+6281122223333" className="hover:text-accent underline">+62 811‑2222‑3333</a></span>
           <span className="block">Jl. Industri Hijau No. 12, Bekasi, Jawa Barat</span>
         </div>
-        <div className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-end gap-2 mt-2 md:mt-0">
+        <div className="flex-1 flex flex-row space-x-1 items-center justify-center md:justify-end gap-2 mt-2 md:mt-0">
           <span className="hidden md:inline">Follow us:</span>
           <a href="https://www.facebook.com" aria-label="Facebook" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
 >>>>>>> dde4f7d (Router)

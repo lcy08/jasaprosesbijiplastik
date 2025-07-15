@@ -31,7 +31,8 @@ function App(){
 =======
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
-import Services from "./components/Services/Services"
+import FAQ from "./components/FAQ/FAQ"
+import Pricing from "./components/Pricing/Pricing"
 import Contact from "./components/Contact/Contact"
 
 function App(){
@@ -44,7 +45,8 @@ function App(){
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

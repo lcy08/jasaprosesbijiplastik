@@ -95,9 +95,9 @@ function Header() {
 
     return (
         <header ref={headerRef} className="sticky top-3 z-50 transition-opacity duration-300">
-            <section className="bg-background mx-3 md:mx-9 p-2 md:py-1 md:px-4 rounded-2xl flex flex-row items-center gap-2 md:gap-6">
+            <section className="bg-background mx-3 md:mx-9 p-2 md:py-1 md:px-4 rounded-2xl flex flex-row items-start gap-2 md:gap-6">
                 {/* Brand/Logo on the left */}
-                <div className="flex-none order-0 mr-2 md:mr-4">
+                <div className="flex-none order-0 md:mr-4">
                   <span className="inline-flex items-center justify-center bg-white/90 rounded-lg p-1 md:p-2 shadow-sm">
                     <img
                       src="https://placehold.co/40x40/222/fff?text=JP"
@@ -106,8 +106,12 @@ function Header() {
                     />
                   </span>
                 </div>
+<<<<<<< HEAD
                 <div className="flex-1 flex items-center justify-center md:justify-start">
 >>>>>>> dde4f7d (Router)
+=======
+                <div className=" hidden md:flex-1 md:flex md:items-center md:justify-start">
+>>>>>>> dbc3f0b (del services, add faq and pricing)
                   {/* Empty for spacing, keeps nav centered on desktop */}
                 </div>
                 {/* Hamburger: in-bar on all screens */}
@@ -116,6 +120,7 @@ function Header() {
                 </div>
                 <nav
                   aria-label="Main navigation"
+<<<<<<< HEAD
 <<<<<<< HEAD
                   className="w-full md:w-auto"
                 >
@@ -127,10 +132,17 @@ function Header() {
                   <div
                     className={`items-center justify-between md:justify-center w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
 >>>>>>> dde4f7d (Router)
+=======
+                  className="w-full md:w-auto"
+                >
+                  <div
+                    className={`items-center justify-start md:justify-center w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
+>>>>>>> dbc3f0b (del services, add faq and pricing)
                      ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}`}
                     id="navbar"
                     aria-expanded={isMenuOpen}
                   >
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <ul className={`divide-y divide-background flex flex-col justify-end md:p-0 mb-3 rounded-lg bg-jungle-green-100 md:bg-transparent border border-blue-200 md:border-0 shadow-md md:shadow-none md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-2 md:mb-0 transition-[max-height,opacity] duration-500 ease-in-out md:translate-y-0`}>
                       <NavItem link="/" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Home</NavItem>
@@ -143,6 +155,13 @@ function Header() {
                       <NavItem link="/about" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/about' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>About</NavItem>
                       <NavItem link="/services" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/services' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Services</NavItem>
 >>>>>>> dde4f7d (Router)
+=======
+                    <ul className={`divide-y divide-background flex flex-col justify-end md:p-0 mb-3 rounded-lg bg-jungle-green-100 md:bg-transparent border border-blue-200 md:border-0 shadow-md md:shadow-none md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-2 md:mb-0 transition-all duration-700 ${isMenuOpen ? 'translate-y-0' : 'translate-y-[-10px] md:translate-y-0'}`}>
+                      <NavItem link="/" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Home</NavItem>
+                      <NavItem link="/about" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/about' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>About</NavItem>
+                      <NavItem link="/pricing" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/pricing' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Pricing</NavItem>
+                      <NavItem link="/faq" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/faq' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>FAQ</NavItem>
+>>>>>>> dbc3f0b (del services, add faq and pricing)
                       <NavItem link="/contact" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/contact' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Contact</NavItem>
                     </ul>
                   </div>
