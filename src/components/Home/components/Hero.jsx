@@ -25,9 +25,14 @@ function Hero(){
 
             <img
                 alt="Pabrik pengolahan biji plastik dengan mesin modern"
-                src="https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?auto=format&fit=crop&w=800&q=80"
+                srcSet="
+                  https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?auto=format&fit=crop&w=600&q=80 600w,
+                  https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?auto=format&fit=crop&w=1200&q=80 1200w,
+                  https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?auto=format&fit=crop&w=1770&q=80 1770w
+                "
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-                loading="lazy"
                 fetchpriority="high"
             />
         </section>

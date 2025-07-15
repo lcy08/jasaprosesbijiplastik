@@ -7,7 +7,13 @@ function PictureDiv({ title, desc, image }) {
       </div>
       <div className="flex justify-center mt-4">
         <img
-          src={image}
+          src={image.replace(/w=800/, 'w=400')}
+          srcSet={`
+            ${image.replace(/w=800/, 'w=400')} 400w,
+            ${image.replace(/w=800/, 'w=800')} 800w,
+            ${image.replace(/w=800/, 'w=1200')} 1200w
+          `}
+          sizes="100vw"
           alt={title}
           className="md:hidden rounded-lg w-full max-w-md ring-4 ring-green-200"
           loading="lazy"
