@@ -1,10 +1,12 @@
+import {
+  Link
+} from 'react-router-dom'
 import propTypes from 'prop-types';
 
-function NavItem ({ children, href, className = '', ...props }) {
+function NavItem ({ children, link, className = '', ...props }) {
   return (
     <li className={`nav-item pr-2 pb-1 justify-center items-center text-end md:text-center ${className}`} {...props}>
-      <a href={href} className="text-text md:text-jungle-green-100 hover:text-amber-200 font-bold font-playfair transition-colors ease-in duration-300">
-        {children} </a>
+      <Link className="hover:text-green-700 md:hover:text-jungle-green-900 font-bold font-playfair transition-colors ease-in duration-300" to={link}>{children}</Link>
     </li>
     );
 }
