@@ -28,7 +28,7 @@ function LocationGallery() {
         <div className="grid gap-8 md:grid-cols-3">
           {locations.map(loc => (
             <div key={loc.id} className="rounded-xl shadow-lg bg-green-50 hover:shadow-xl transition overflow-hidden flex flex-col">
-              <img src={loc.image} alt={loc.name} className="h-48 w-full object-cover" />
+              <img src={loc.image} alt={loc.name} className="h-48 w-full object-cover" loading="lazy" />
               <div className="p-5 flex-1 flex flex-col">
                 <h3 className="font-bold text-lg text-jungle-green-800 mb-1">{loc.name}</h3>
                 <p className="text-gray-700 text-sm flex-1">{loc.desc}</p>
