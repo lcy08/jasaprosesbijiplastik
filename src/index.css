@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import './fonts.css';
 =======
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 >>>>>>> 96d61e8 (optimization for font loading)
+=======
+@import './fonts.css';
+>>>>>>> eb9f77e (forced reflow (-))
 
 @import "tailwindcss";
 
