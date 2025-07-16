@@ -5,48 +5,17 @@ import { Mail, Phone, MapPin, Clipboard } from "lucide-react";
 
 import Header from "/src/components/Layout/Header"
 import Footer from "/src/components/Layout/Footer"
+import BackTop from "../Layout/BackTop";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 }
 };
 
+
+
 function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState("idle"); // idle | sending | sent
   const [copied, setCopied] = useState(null); // "email" | "phone" | null
-
-  const validate = () => {
-    const newErrors = {};
-    if (!form.name.trim()) newErrors.name = "Nama wajib diisi";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      newErrors.email = "Email tidak valid";
-    if (!form.message.trim()) newErrors.message = "Pesan wajib diisi";
-    return newErrors;
-  };
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    if (errors[e.target.name]) {
-      setErrors({ ...errors, [e.target.name]: undefined });
-    }
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const newErrors = validate();
-    if (Object.keys(newErrors).length) {
-      setErrors(newErrors);
-      return;
-    }
-    setStatus("sending");
-    // Simulate async send
-    setTimeout(() => {
-      setStatus("sent");
-      setForm({ name: "", email: "", message: "" });
-    }, 1500);
-  };
 
   const copy = (label, text) => {
     navigator.clipboard.writeText(text);
@@ -61,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <main className="px-4 md:px-0 text-gray-800 space-y-24">
+    <main className="text-gray-800">
       <Helmet>
         <title>Kontak | Jasa Proses Biji Plastik</title>
         <meta
@@ -71,8 +40,9 @@ function Contact() {
       </Helmet>
 
       <Header />
+      <BackTop />
 
-      <section className="max-w-5xl mx-auto space-y-12">
+      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 mt-8 md:mt-12 space-y-12">
       {/* Header */}
         <motion.header
             variants={fadeUp}
@@ -84,115 +54,40 @@ function Contact() {
         >
             <h1 className="text-4xl font-extrabold font-playfair">Hubungi Kami</h1>
             <p className="text-lg max-w-2xl mx-auto">
-            Kami siap membantu Anda. Pilih metode kontak di bawah atau kirim pesan
-            langsung melalui formulir.
+            Untuk pertanyaan dan pemesanan, silakan hubungi kami langsung melalui email, telepon, atau WhatsApp.
             </p>
         </motion.header>
 
-        {/* Contact Info Cards */}
-        <motion.section
-            className="grid md:grid-cols-3 gap-8"
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-        >
-            {/* Email */}
-            <div className="p-6 bg-white rounded-2xl shadow-md flex flex-col items-center text-center gap-4">
-            <Mail className="w-8 h-8" />
-            <p>{contactInfo.email}</p>
-            <button
-                onClick={() => copy("email", contactInfo.email)}
-                className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline"
-            >
-                <Clipboard className="w-4 h-4" /> {copied === "email" ? "Tersalin!" : "Salin"}
-            </button>
-            </div>
-            {/* Phone */}
-            <div className="p-6 bg-white rounded-2xl shadow-md flex flex-col items-center text-center gap-4">
-            <Phone className="w-8 h-8" />
-            <p>{contactInfo.phone}</p>
-            <button
-                onClick={() => copy("phone", contactInfo.phone)}
-                className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline"
-            >
-                <Clipboard className="w-4 h-4" /> {copied === "phone" ? "Tersalin!" : "Salin"}
-            </button>
-            </div>
-            {/* Address */}
-            <div className="p-6 bg-white rounded-2xl shadow-md flex flex-col items-center text-center gap-4">
-            <MapPin className="w-8 h-8" />
-            <p>{contactInfo.address}</p>
-            </div>
-        </motion.section>
-
-        {/* Form */}
+        {/* Direct Contact Options */}
         <motion.section
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white p-8 rounded-2xl shadow-md max-w-3xl mx-auto"
+            className="bg-white p-8 rounded-2xl shadow-md max-w-3xl mx-auto text-center"
         >
-            <h2 className="text-2xl font-semibold mb-6 text-center">Formulir Kontak</h2>
-            {status === "sent" && (
-            <div className="bg-green-100 border border-green-300 text-green-700 p-4 rounded mb-6 text-center">
-                Pesan Anda telah terkirim. Kami akan segera menghubungi Anda!
+            <h2 className="text-2xl font-semibold mb-6">Hubungi Langsung</h2>
+            <div className="space-y-4">
+              <a href="mailto:info@jasaprosesbijiplastik.biz.id" className="block text-blue-700 hover:underline text-lg font-medium">Email: info@jasaprosesbijiplastik.biz.id</a>
+              <a href="tel:+6281122223333" className="block text-green-700 hover:underline text-lg font-medium">Telepon: +62 811‑2222‑3333</a>
+              <a href="https://wa.me/6281122223333" target="_blank" rel="noopener noreferrer" className="block text-green-600 hover:underline text-lg font-medium">Chat via WhatsApp</a>
+              <p className="text-gray-700">Alamat: Jl. Industri Hijau No. 12, Bekasi, Jawa Barat</p>
             </div>
-            )}
-            <form className="space-y-4" onSubmit={handleSubmit} noValidate>
-            <div>
-                <label className="block mb-1 font-medium">Nama</label>
-                <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                className={`w-full px-4 py-2 rounded border ${
-                    errors.name ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:ring-2 focus:ring-blue-400`}
-                placeholder="Nama lengkap"
-                />
-                {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name}</p>}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
+              <button
+                onClick={() => copy("email", contactInfo.email)}
+                className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline border border-blue-200 rounded px-4 py-2"
+              >
+                <Clipboard className="w-4 h-4" /> {copied === "email" ? "Email Tersalin!" : "Salin Email"}
+              </button>
+              <button
+                onClick={() => copy("phone", contactInfo.phone)}
+                className="inline-flex items-center gap-2 text-sm text-green-600 hover:underline border border-green-200 rounded px-4 py-2"
+              >
+                <Clipboard className="w-4 h-4" /> {copied === "phone" ? "Telepon Tersalin!" : "Salin Telepon"}
+              </button>
             </div>
-            <div>
-                <label className="block mb-1 font-medium">Email</label>
-                <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                className={`w-full px-4 py-2 rounded border ${
-                    errors.email ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:ring-2 focus:ring-blue-400`}
-                placeholder="alamat@email.com"
-                />
-                {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
-            </div>
-            <div>
-                <label className="block mb-1 font-medium">Pesan</label>
-                <textarea
-                name="message"
-                rows="5"
-                value={form.message}
-                onChange={handleChange}
-                className={`w-full px-4 py-2 rounded border ${
-                    errors.message ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:ring-2 focus:ring-blue-400`}
-                placeholder="Tulis pesan Anda di sini..."
-                ></textarea>
-                {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message}</p>}
-            </div>
-            <button
-                type="submit"
-                disabled={status === "sending"}
-                className="w-full py-3 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 disabled:opacity-50"
-            >
-                {status === "sending" ? "Mengirim..." : "Kirim Pesan"}
-            </button>
-            </form>
         </motion.section>
 
         {/* Map */}

@@ -5,6 +5,9 @@ import NavItem from "./Header/NavItem";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showHeader, setShowHeader] = useState(true);
+    const [isAtTop, setIsAtTop] = useState(true);
+    const lastScrollY = useRef(window.scrollY);
     const headerRef = useRef(null);
     const location = useLocation();
 
@@ -13,20 +16,48 @@ function Header() {
     };
 
     useEffect(() => {
+        let ticking = false;
         const handleScroll = () => {
             if (!headerRef.current) return;
-            if (window.scrollY === 0) {
-                headerRef.current.classList.remove('opacity-80');
+
+            const currentY = window.scrollY;
+            // Only apply on mobile (md: < 768px)
+            if (window.innerWidth >= 768) {
+                setShowHeader(true);
+                setIsAtTop(currentY === 0);
+                return;
+            }
+
+            if (isMenuOpen) return;
+
+            if (currentY > lastScrollY.current && currentY > 40) {
+                // Scrolling down
+                setShowHeader(false);
             } else {
-                headerRef.current.classList.add('opacity-80');
+                // Scrolling up
+                setShowHeader(true);
+            }
+            lastScrollY.current = currentY;
+        };
+        const onScroll = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    handleScroll();
+                    ticking = false;
+                });
+                ticking = true;
             }
         };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        window.addEventListener('scroll', onScroll);
+        return () => window.removeEventListener('scroll', onScroll);
+    }, [isMenuOpen]);
 
     return (
-        <header ref={headerRef} className="sticky top-3 z-50 transition-opacity duration-300">
+        <header
+            ref={headerRef}
+            className={`sticky top-3 z-50 transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-[calc(100%+10%)]'} md:translate-y-0 ${isAtTop ? 'opacity-100' : 'opacity-80'}`}
+            style={{ willChange: 'transform' }}
+        >
             <section className="bg-background mx-3 md:mx-9 p-2 md:py-1 md:px-4 rounded-2xl flex flex-row items-start gap-2 md:gap-6">
                 {/* Brand/Logo on the left */}
                 <div className="flex-none order-0 md:mr-4">
@@ -56,7 +87,7 @@ function Header() {
                     id="navbar"
                     aria-expanded={isMenuOpen}
                   >
-                    <ul className={`divide-y divide-background flex flex-col justify-end md:p-0 mb-3 rounded-lg bg-jungle-green-100 md:bg-transparent border border-blue-200 md:border-0 shadow-md md:shadow-none md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-2 md:mb-0 transition-all duration-700 ${isMenuOpen ? 'translate-y-0' : 'translate-y-[-10px] md:translate-y-0'}`}>
+                    <ul className={`divide-y divide-background flex flex-col justify-end md:p-0 mb-3 rounded-lg bg-jungle-green-100 md:bg-transparent border border-blue-200 md:border-0 shadow-md md:shadow-none md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-2 md:mb-0 transition-[max-height,opacity] duration-500 ease-in-out md:translate-y-0`}>
                       <NavItem link="/" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Home</NavItem>
                       <NavItem link="/about" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/about' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>About</NavItem>
                       <NavItem link="/pricing" className={`text-lg rounded-md transition-colors px-3 py-2${location.pathname === '/pricing' ? ' text-white md:text-jungle-green-900 bg-jungle-green-400 md:bg-jungle-green-300 font-semibold underline underline-offset-4' : ' text-text md:text-jungle-green-100 hover:bg-jungle-green-100 md:hover:bg-jungle-green-200'}`}>Pricing</NavItem>

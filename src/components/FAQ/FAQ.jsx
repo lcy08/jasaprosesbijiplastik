@@ -1,6 +1,7 @@
 
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
+import BackTop from "../Layout/BackTop";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 
@@ -30,7 +31,7 @@ function FAQ() {
   ];
 
   return (
-    <main className="px-4 md:px-0 text-gray-800 space-y-24">
+    <main className="text-gray-800">
       <Helmet>
         <title>FAQ | Jasa Proses Biji Plastik</title>
         <meta
@@ -40,8 +41,9 @@ function FAQ() {
       </Helmet>
 
       <Header />
+      <BackTop />
 
-      <section className="max-w-5xl mx-auto">
+      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 mt-8 md:mt-12 space-y-12">
         <motion.header
           variants={fadeUp}
           initial="hidden"
