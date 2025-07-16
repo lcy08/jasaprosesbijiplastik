@@ -13,6 +13,7 @@ import Compare from './components/Compare';
 import PictureSect from './components/PictureSect';
 import LocationGallery from './components/LocationGallery';
 import Footer from '/src/components/Layout/Footer';
+import BackTop from '../Layout/BackTop'
 import '/src/index.css';
 >>>>>>> dde4f7d (Router)
 
@@ -101,6 +102,7 @@ function Home() {
       </RevealOnScroll>
 =======
       <Header />
+      <BackTop />
       <Hero />
       <Compare />
       <PictureSect />

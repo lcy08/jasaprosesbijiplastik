@@ -42,10 +42,6 @@ const Pricing = lazy(() => import("./components/Pricing/Pricing"));
 const Contact = lazy(() => import("./components/Contact/Contact"));
 
 function App(){
-  const padding = {
-    padding: 5
-  }
-
   return (
 <<<<<<< HEAD
     <Router>

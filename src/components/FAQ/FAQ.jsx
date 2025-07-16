@@ -4,6 +4,7 @@
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
 import BackTop from "../Layout/BackTop";
+<<<<<<< HEAD
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 
@@ -51,6 +52,8 @@ const faqs = [
 >>>>>>> 7d6e39e (noice stop for the picturesect)
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
+=======
+>>>>>>> 9c3a46b (back top button)
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 
@@ -81,6 +84,7 @@ function FAQ() {
   ];
 
   return (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <main className="text-gray-800">
@@ -137,6 +141,9 @@ function FAQ() {
     <Header />
 =======
     <main className="px-4 md:px-0 text-gray-800 space-y-24">
+=======
+    <main className="text-gray-800">
+>>>>>>> 9c3a46b (back top button)
       <Helmet>
         <title>FAQ | Jasa Proses Biji Plastik</title>
         <meta
@@ -147,13 +154,18 @@ function FAQ() {
 >>>>>>> 7d6e39e (noice stop for the picturesect)
 
       <Header />
+      <BackTop />
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Footer />
     </>
 >>>>>>> dbc3f0b (del services, add faq and pricing)
 =======
       <section className="max-w-5xl mx-auto">
+=======
+      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 mt-8 md:mt-12 space-y-12">
+>>>>>>> 9c3a46b (back top button)
         <motion.header
           variants={fadeUp}
           initial="hidden"

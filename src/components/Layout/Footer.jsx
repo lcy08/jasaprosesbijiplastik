@@ -1,12 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 function Footer() {
   return (
     <>
     <footer className="bg-background text-white pt-4 pb-2 px-2 md:px-6 rounded-t-2xl shadow-inner">
 =======
 
+=======
+>>>>>>> 9c3a46b (back top button)
 function Footer() {
   return (
+    <>
     <footer className="bg-background text-white py-2 px-2 md:px-6 rounded-t-2xl shadow-inner">
 >>>>>>> dde4f7d (Router)
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs md:text-base">
@@ -62,9 +66,13 @@ function Footer() {
       <div className="text-center text-xs text-gray-300 mt-2">&copy; {new Date().getFullYear()} Jasa Proses Biji Plastik. All rights reserved.</div>
     </footer>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </>
 =======
 >>>>>>> dde4f7d (Router)
+=======
+    </>
+>>>>>>> 9c3a46b (back top button)
   );
 }
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Header from "/src/components/Layout/Header"
 import Footer from "/src/components/Layout/Footer"
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Parallax from "/src/components/Layout/Parallax";
 import BackTop from "../Layout/BackTop";
 
@@ -13,6 +14,9 @@ import Vision from "./components/Vision";
 import Services from "./components/Services";
 =======
 >>>>>>> dde4f7d (Router)
+=======
+import BackTop from "../Layout/BackTop";
+>>>>>>> 9c3a46b (back top button)
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -84,7 +88,7 @@ function About() {
   ];
 
   return (
-    <main className="px-4 md:px-0 text-gray-800 space-y-24">
+    <main className="text-gray-800">
       <Helmet>
         <title>Tentang Kami | Jasa Proses Biji Plastik</title>
         <meta
@@ -94,8 +98,9 @@ function About() {
       </Helmet>
 
       <Header />
+      <BackTop />
 
-      <section className="max-w-5xl mx-auto ">
+      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 mt-8 md:mt-12 space-y-12">
 
         {/* Intro */}
         <motion.header
