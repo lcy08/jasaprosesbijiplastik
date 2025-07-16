@@ -33,7 +33,7 @@ function Hero(){
                 "
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-                fetchpriority="high"
+                fetchPriority="high"
             />
         </section>
         </>

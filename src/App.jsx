@@ -13,10 +13,6 @@ const Pricing = lazy(() => import("./components/Pricing/Pricing"));
 const Contact = lazy(() => import("./components/Contact/Contact"));
 
 function App(){
-  const padding = {
-    padding: 5
-  }
-
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
       <Router>

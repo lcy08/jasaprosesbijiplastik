@@ -1,6 +1,6 @@
-
 function Footer() {
   return (
+    <>
     <footer className="bg-background text-white py-2 px-2 md:px-6 rounded-t-2xl shadow-inner">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs md:text-base">
         <div className="flex-1 text-center md:text-left">
@@ -27,6 +27,7 @@ function Footer() {
       </div>
       <div className="text-center text-xs text-gray-300 mt-2">&copy; {new Date().getFullYear()} Jasa Proses Biji Plastik. All rights reserved.</div>
     </footer>
+    </>
   );
 }
 
