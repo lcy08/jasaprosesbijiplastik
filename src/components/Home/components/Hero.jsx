@@ -5,12 +5,20 @@ import plastics4 from "../assets/Hero/4.jpg";
 import plastics5 from "../assets/Hero/5.jpg";
 import plastics6 from "../assets/Hero/6.jpg";
 import Parallax from "../../Layout/Parallax";
+import { useState } from "react";
 
 const plasticImages = [plastics1, plastics2, plastics3, plastics4, plastics5, plastics6];
 
-
-
 function Hero(){
+    const [loaded, setLoaded] = useState(Array(plasticImages.length).fill(false));
+
+    const handleLoad = index => {
+        setLoaded(prev => {
+        const updated = [...prev];
+        updated[index] = true;
+        return updated;
+        });
+    };
     return (
         <section className="mt-10 bg-gradient-to-r from-green-50 to-green-100 py-16">
             <div className="mx-auto">
@@ -29,7 +37,7 @@ function Hero(){
                     Dengan kapasitas produksi hingga 12 ton per hari, kami siap memenuhi permintaan Anda dengan kualitas terbaik.
                 </p>
                 <a
-                    href="/contact"
+                    href="https://wa.me/6281290029538"
                     className="inline-block bg-green-800 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-green-900 transition"
                 >
                     Hubungi Kami Sekarang
@@ -46,7 +54,12 @@ function Hero(){
                     key={i}
                     src={src}
                     alt={`Biji Plastik ${i + 1}`}
+                    onLoad={() => handleLoad(i)}
+                    intial={{ opacity:0, scale: 0.95 }}
+                    animate={loaded[i] ? { opacity: 1, scale: 1 } : {}}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
                     className="rounded-xl object-cover aspect-square w-full shadow-sm border border-gray-200 hover:scale-105 transition-transform duration-200"
+                    fetchPriority="high"
                     />
                 ))}
                 </div>

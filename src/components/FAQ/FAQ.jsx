@@ -52,7 +52,7 @@ function FAQ() {
           transition={{ duration: 0.6 }}
           className="text-center space-y-4"
         >
-          <h1 className="text-4xl font-extrabold font-playfair">FAQ</h1>
+          <h1 className="text-4xl font-extrabold">FAQ</h1>
           <p className="text-lg text-gray-700">
             Pertanyaan yang sering diajukan tentang layanan dan proses kami.
           </p>

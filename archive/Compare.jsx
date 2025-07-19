@@ -1,4 +1,4 @@
-import Product from '../src/components/Home/components/Compare/Product'
+import Product from './Compare/Product'
 
 function Compare() {
   return (
