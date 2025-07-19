@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Product from './Compare/Product'
 =======
 import Product from '../src/components/Home/components/Compare/Product'
 >>>>>>> 7f91838 (new layout)
+=======
+import Product from './Compare/Product'
+>>>>>>> d0d54ba (about page, gallery and 404 redirect)
 
 function Compare() {
   return (

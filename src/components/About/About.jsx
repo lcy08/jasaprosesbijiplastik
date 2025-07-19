@@ -12,11 +12,14 @@ import Us from "./components/Us";
 import Hero from "./components/Hero";
 import Vision from "./components/Vision";
 import Services from "./components/Services";
+<<<<<<< HEAD
 =======
 >>>>>>> dde4f7d (Router)
 =======
 import BackTop from "../Layout/BackTop";
 >>>>>>> 9c3a46b (back top button)
+=======
+>>>>>>> d0d54ba (about page, gallery and 404 redirect)
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -24,6 +27,7 @@ const fadeUp = {
 };
 
 function About() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   return (
@@ -86,6 +90,8 @@ function About() {
     "Mendorong daur ulang plastik untuk masa depan yang lebih hijau",
     "Memberikan nilai tambah kepada klien melalui efisiensi proses"
   ];
+=======
+>>>>>>> d0d54ba (about page, gallery and 404 redirect)
 
   return (
     <main className="text-gray-800">
@@ -100,23 +106,20 @@ function About() {
       <Header />
       <BackTop />
 
-      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 mt-8 md:mt-12 space-y-12">
+      
+        <div className="bg-yellow-50 min-h-screen py-12 text-slate-800">
+          <Us />
 
-        {/* Intro */}
-        <motion.header
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center space-y-4"
-        >
-            <h1 className="text-4xl font-extrabold font-playfair">Tentang Kami</h1>
-            <p className="text-lg">
-            Kami adalah penyedia jasa pengolahan biji plastik ramah lingkungan
-            berkualitas tinggi. Berdiri sejak <span className="font-semibold">20XX</span>,
-            kami melayani berbagai sektor industri di Indonesia.
+          <Vision />
+
+          <Hero />
+
+          <Services />
+          <div className="max-w-4xl mx-auto p-6 text-center">
+            <p className="text-gray-600 italic text-xl">
+              Kepuasan Anda adalah prioritas kami.
             </p>
+<<<<<<< HEAD
         </motion.header>
 
         {/* Services */}
@@ -254,6 +257,10 @@ function About() {
 
       </section>
 >>>>>>> dbc3f0b (del services, add faq and pricing)
+=======
+          </div>
+        </div>
+>>>>>>> d0d54ba (about page, gallery and 404 redirect)
       <Footer />
     </main>
   );

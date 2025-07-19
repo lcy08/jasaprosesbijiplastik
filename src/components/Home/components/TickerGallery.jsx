@@ -2,6 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import tickerItems from '../../../data/media'
 
 import { XMarkIcon } from '@heroicons/react/24/outline';
@@ -18,6 +19,9 @@ const tickerItems = [
   { id: 4, type: 'video/mp4', src: four },
 ];
 >>>>>>> 7f91838 (new layout)
+=======
+import tickerItems from '../../../data/media'
+>>>>>>> d0d54ba (about page, gallery and 404 redirect)
 
 // Ticker width will auto repeat items for seamless scroll
 const TickerGallery = () => {
