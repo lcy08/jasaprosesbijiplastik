@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
-import PictureDiv from "../../../../archive/PictureSect/PictureDiv.jsx";
+import PictureDiv from "./PictureSect/PictureDiv.jsx";
 import prosesGiling from '../assets/GilingPlastik.mp4'
 
 function PictureSect() {

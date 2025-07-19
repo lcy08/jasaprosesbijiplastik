@@ -13,7 +13,6 @@ const fadeUp = {
 };
 
 
-
 function Contact() {
   const [copied, setCopied] = useState(null); // "email" | "phone" | null
 
@@ -42,7 +41,7 @@ function Contact() {
       <Header />
       <BackTop />
 
-      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 mt-8 md:mt-12 space-y-12">
+      <section className="min-h-screen max-w-5xl mx-auto px-4 md:px-0 my-8 md:my-12 space-y-12">
       {/* Header */}
         <motion.header
             variants={fadeUp}
@@ -69,10 +68,10 @@ function Contact() {
         >
             <h2 className="text-2xl font-semibold mb-6">Hubungi Langsung</h2>
             <div className="space-y-4">
-              <a href="mailto:info@jasaprosesbijiplastik.biz.id" className="block text-blue-700 hover:underline text-lg font-medium">Email: info@jasaprosesbijiplastik.biz.id</a>
-              <a href="tel:+6281122223333" className="block text-green-700 hover:underline text-lg font-medium">Telepon: +62 811‑2222‑3333</a>
-              <a href="https://wa.me/6281122223333" target="_blank" rel="noopener noreferrer" className="block text-green-600 hover:underline text-lg font-medium">Chat via WhatsApp</a>
-              <p className="text-gray-700">Alamat: Jl. Industri Hijau No. 12, Bekasi, Jawa Barat</p>
+              <a href="mailto:info@mail.com" className="block text-blue-700 hover:underline text-lg font-medium">Email: info@mail.com</a>
+              <a href="tel:+6281290029538" className="block text-green-700 hover:underline text-lg font-medium">Telepon: +62 812-9002-9538</a>
+              <a href="https://wa.me/6281290029538" target="_blank" rel="noopener noreferrer" className="block text-green-600 hover:underline text-lg font-medium">Chat via WhatsApp</a>
+              <p className="text-gray-700">Alamat: Jl. Raya Kosambi Timur. No.36, Kosambi Timur., Kec. Kosambi, Kabupaten Tangerang, Banten 15213</p>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
               <button
