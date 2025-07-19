@@ -12,6 +12,7 @@ import React, { Suspense, lazy } from "react";
 const About = lazy(() => import("./components/About/About"));
 const FAQ = lazy(() => import("./components/FAQ/FAQ"));
 const Gallery = lazy(() => import("./components/Gallery/Galley"));
+<<<<<<< HEAD
 const Contact = lazy(() => import("./components/Contact/Contact"));
 
 function App(){
@@ -39,6 +40,8 @@ import React, { Suspense, lazy } from "react";
 const About = lazy(() => import("./components/About/About"));
 const FAQ = lazy(() => import("./components/FAQ/FAQ"));
 const Pricing = lazy(() => import("./components/Pricing/Pricing"));
+=======
+>>>>>>> 7f91838 (new layout)
 const Contact = lazy(() => import("./components/Contact/Contact"));
 
 function App(){
@@ -64,7 +67,7 @@ function App(){
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>

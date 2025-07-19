@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Product from './Compare/Product'
+=======
+import Product from '../src/components/Home/components/Compare/Product'
+>>>>>>> 7f91838 (new layout)
 
 function Compare() {
   return (
