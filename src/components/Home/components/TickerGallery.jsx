@@ -1,17 +1,7 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import one from '../assets/Gallery/1.jpg';
-import two from '../assets/Gallery/2.mp4';
-import three from '../assets/Gallery/3.jpg';
-import four from '../assets/Gallery/4.mp4';
-
-const tickerItems = [
-  { id: 1, type: 'image', src: one },
-  { id: 2, type: 'video/mp4', src: two },
-  { id: 3, type: 'image', src: three },
-  { id: 4, type: 'video/mp4', src: four },
-];
+import tickerItems from '../../../data/media'
 
 // Ticker width will auto repeat items for seamless scroll
 const TickerGallery = () => {

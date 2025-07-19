@@ -13,16 +13,16 @@ function Home() {
     <>
       <Helmet>
         {/* Title & Description */}
-        <title>Jasa Proses Biji Plastik | Pengolahan Plastik Berkualitas</title>
+        <title>Jasa Proses Biji Plastik Termurah | Pengolahan Plastik Berkualitas</title>
         <meta
           name="description"
-          content="Kami menyediakan layanan proses biji plastik terbaik di Indonesia. Daur ulang dan pengolahan plastik dengan teknologi modern dan hasil berkualitas."
+          content="Kami menyediakan layanan proses biji plastik terbaik dan termurah di Indonesia. Daur ulang dan pengolahan plastik dengan teknologi modern dan hasil berkualitas."
         />
 
         {/* Keywords for SEO */}
         <meta
           name="keywords"
-          content="mp. plast, proses biji plastik, daur ulang plastik, pengolahan plastik, jasa plastik Indonesia, biji plastik murah, penggilingan plastik, limbah plastik, pabrik plastik"
+          content="mp. plast, termurah, proses biji plastik, daur ulang plastik, pengolahan plastik, jasa plastik Indonesia, biji plastik murah, penggilingan plastik, limbah plastik, pabrik plastik"
         />
 
         {/* Canonical URL */}
@@ -32,7 +32,7 @@ function Home() {
         <meta property="og:title" content="Jasa Proses Biji Plastik" />
         <meta
           property="og:description"
-          content="Layanan pengolahan dan daur ulang biji plastik terbaik. Dapatkan hasil berkualitas dengan teknologi modern."
+          content="Layanan pengolahan dan daur ulang biji plastik terbaik dan termurah. Dapatkan hasil berkualitas dengan teknologi modern."
         />
         <meta property="og:url" content="https://jasaprosesbijiplastik.biz.id/" />
         <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@ function Home() {
         <meta name="twitter:title" content="Jasa Proses Biji Plastik" />
         <meta
           name="twitter:description"
-          content="Daur ulang biji plastik berkualitas di Indonesia. Proses cepat, hasil unggulan."
+          content="Daur ulang biji plastik berkualitas dan termurah di Indonesia. Proses cepat, hasil unggulan."
         />
         <meta name="twitter:image" content="https://jasaprosesbijiplastik.biz.id/assets/1-Bt62zgc6.jpg" />
 

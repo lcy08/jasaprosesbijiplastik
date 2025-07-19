@@ -8,9 +8,10 @@ function Footer() {
           <span className="block mb-1">Solusi daur ulang plastik industri, hasil berkualitas & ramah lingkungan.</span>
         </div>
         <div className="flex-1 text-center md:text-left mt-2 md:mt-0">
-          <span className="block">Email: <a href="mailto:info@jasaprosesbijiplastik.biz.id" className="hover:text-accent underline">info@jasaprosesbijiplastik.biz.id</a></span>
-          <span className="block">Telp: <a href="tel:+6281122223333" className="hover:text-accent underline">+62 811‑2222‑3333</a></span>
-          <span className="block">Jl. Industri Hijau No. 12, Bekasi, Jawa Barat</span>
+          <span className="block">Email: <a href="mailto:info@mail.com" className="hover:text-accent underline">info@mail.com</a></span>
+          <span className="block">Telp: <a href="tel:+6281290029538" className="hover:text-accent underline">+62 812-9002-9538</a></span>
+          <span className="block">WhatsApp: <a href="https://wa.me/6281290029538" className="hover:text-accent underline">+62 812-9002-9538</a> </span>
+          <span className="block">Jl. Raya Kosambi Timur. No.36, Kosambi Timur., Kec. Kosambi, Kabupaten Tangerang, Banten 15213</span>
         </div>
         <div className="flex-1 flex flex-row space-x-1 items-center justify-center md:justify-end gap-2 mt-2 md:mt-0">
           <span className="hidden md:inline">Follow us:</span>
