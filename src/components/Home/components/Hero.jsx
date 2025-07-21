@@ -31,7 +31,7 @@ function Hero(){
                     Tingkatkan Kualitas Produksi <br className="hidden md:block" /> Plastik Anda
                 </h1>
                 <p className="text-gray-700 text-lg">
-                    MP. PLAST hadir dengan teknologi modern untuk memproses biji plastik ABS, PP, dan PVC — bersih, stabil, dan siap pakai untuk segala kebutuhan industri.
+                    MP. PLAST hadir dengan teknologi modern untuk memproses biji plastik ABS dan PP — bersih, stabil, dan siap pakai untuk segala kebutuhan industri.
                 </p>
                 <p className="text-gray-600 text-sm">
                     Dengan kapasitas produksi hingga 12 ton per hari, kami siap memenuhi permintaan Anda dengan kualitas terbaik.
