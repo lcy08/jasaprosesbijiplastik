@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import Header from "/src/components/Layout/Header"
 import Footer from "/src/components/Layout/Footer"
+import Parallax from "/src/components/Layout/Parallax";
 import BackTop from "../Layout/BackTop";
 
 import Us from "./components/Us";
@@ -32,7 +33,9 @@ function About() {
 
       
         <div className="bg-yellow-50 min-h-screen py-12 text-slate-800">
-          <Us />
+          <Parallax>
+            <Us />
+          </Parallax>
 
           <Vision />
 
