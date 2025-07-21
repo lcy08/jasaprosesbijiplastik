@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hamburger from './Header/Hamburger';
 import NavItem from "./Header/NavItem";
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/logo.png';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
