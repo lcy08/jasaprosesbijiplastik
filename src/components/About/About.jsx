@@ -5,6 +5,9 @@ import Header from "/src/components/Layout/Header"
 import Footer from "/src/components/Layout/Footer"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0d59376 (npmrc)
 import Parallax from "/src/components/Layout/Parallax";
 import BackTop from "../Layout/BackTop";
 
@@ -108,7 +111,9 @@ function About() {
 
       
         <div className="bg-yellow-50 min-h-screen py-12 text-slate-800">
-          <Us />
+          <Parallax>
+            <Us />
+          </Parallax>
 
           <Vision />
 
