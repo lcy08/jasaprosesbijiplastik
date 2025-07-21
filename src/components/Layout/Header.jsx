@@ -4,10 +4,14 @@ import Hamburger from './Header/Hamburger';
 import NavItem from "./Header/NavItem";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import logo from '../../assets/logo.png';
 =======
 import logo from '../../assets/logo.jpg';
 >>>>>>> 7f91838 (new layout)
+=======
+import logo from '../../assets/logo.png';
+>>>>>>> 6f69def (logo)
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
