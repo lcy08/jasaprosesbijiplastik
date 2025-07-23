@@ -33,10 +33,10 @@ function FAQ() {
   return (
     <main className="text-gray-800">
       <Helmet>
-        <title>FAQ | Jasa Proses Biji Plastik</title>
+        <title>FAQ | MP. PLAST - Jasa Proses Biji Plastik Termurah</title>
         <meta
           name="description"
-          content="Pertanyaan yang sering diajukan tentang layanan dan proses Jasa Proses Biji Plastik."
+          content="Pertanyaan yang sering diajukan tentang layanan dan proses Jasa Proses Biji Plastik di MP. PLAST."
         />
       </Helmet>
 
