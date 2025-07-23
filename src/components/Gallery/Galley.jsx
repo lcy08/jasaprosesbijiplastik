@@ -67,11 +67,15 @@ function Gallery() {
   return (
     <main className="text-gray-800">
       <Helmet>
-        <title>Galeri | Jasa Proses Biji Plastik</title>
+        <title>Galeri | MP. PLAST - Jasa Proses Biji Plastik Termurah</title>
         <meta
           name="description"
+<<<<<<< HEAD
           content="Daftar harga layanan utama Jasa Proses Biji Plastik. Untuk penawaran khusus, silakan hubungi kami."
 >>>>>>> 7f91838 (new layout)
+=======
+          content="Lihat galeri MP. PLAST dalam memproses biji plastik"
+>>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         />
       </Helmet>
 

@@ -90,6 +90,7 @@ function FAQ() {
     <main className="text-gray-800">
       <Helmet>
         <title>FAQ | MP. PLAST - Jasa Proses Biji Plastik Termurah</title>
+<<<<<<< HEAD
         <meta
           name="description"
           content="Pertanyaan yang sering diajukan tentang layanan dan proses Jasa Proses Biji Plastik di MP. PLAST."
@@ -146,9 +147,11 @@ function FAQ() {
 >>>>>>> 9c3a46b (back top button)
       <Helmet>
         <title>FAQ | Jasa Proses Biji Plastik</title>
+=======
+>>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         <meta
           name="description"
-          content="Pertanyaan yang sering diajukan tentang layanan dan proses Jasa Proses Biji Plastik."
+          content="Pertanyaan yang sering diajukan tentang layanan dan proses Jasa Proses Biji Plastik di MP. PLAST."
         />
       </Helmet>
 >>>>>>> 7d6e39e (noice stop for the picturesect)

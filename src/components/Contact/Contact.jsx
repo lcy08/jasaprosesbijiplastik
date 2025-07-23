@@ -90,6 +90,7 @@ function Contact() {
     <main className="text-gray-800">
       <Helmet>
         <title>Kontak | MP.PLAST - Jasa Proses Biji Plastik Termurah</title>
+<<<<<<< HEAD
         <meta
           name="description"
           content="MP. PLAST - Hubungi kami untuk layanan pengolahan biji plastik — telepon, email, atau kirim pesan via WhatsApp."
@@ -182,9 +183,11 @@ function Contact() {
 >>>>>>> 9c3a46b (back top button)
       <Helmet>
         <title>Kontak | Jasa Proses Biji Plastik</title>
+=======
+>>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         <meta
           name="description"
-          content="Hubungi kami untuk layanan pengolahan biji plastik—telepon, email, atau kirim pesan lewat formulir kontak."
+          content="MP. PLAST - Hubungi kami untuk layanan pengolahan biji plastik — telepon, email, atau kirim pesan via WhatsApp."
         />
       </Helmet>
 

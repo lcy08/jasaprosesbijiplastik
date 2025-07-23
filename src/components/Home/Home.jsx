@@ -41,15 +41,19 @@ function Home() {
 =======
       <Helmet>
         {/* Title & Description */}
-        <title>Jasa Proses Biji Plastik Termurah | Pengolahan Plastik Berkualitas</title>
+        <title>MP. PLAST - Jasa Proses Biji Plastik Termurah | Pengolahan Plastik Berkualitas</title>
         <meta
           name="description"
+<<<<<<< HEAD
 <<<<<<< HEAD
           content="Kami menyediakan layanan proses biji plastik terbaik di Indonesia. Daur ulang dan pengolahan plastik dengan teknologi modern dan hasil berkualitas."
 >>>>>>> 7f91838 (new layout)
 =======
           content="Kami menyediakan layanan proses biji plastik terbaik dan termurah di Indonesia. Daur ulang dan pengolahan plastik dengan teknologi modern dan hasil berkualitas."
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+          content="MP.PLAST adalah perusahaan yang menyediakan layanan proses biji plastik terbaik dan termurah di Indonesia. Daur ulang dan pengolahan plastik dengan teknologi modern dan hasil berkualitas."
+>>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         />
 
         {/* Keywords for SEO */}
@@ -75,6 +79,7 @@ function Home() {
           property="og:description"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           content="MP PLAST menyediakan layanan pengolahan dan daur ulang biji plastik terbaik dan termurah. Dapatkan hasil berkualitas dengan teknologi modern."
 =======
           content="Layanan pengolahan dan daur ulang biji plastik terbaik. Dapatkan hasil berkualitas dengan teknologi modern."
@@ -82,6 +87,9 @@ function Home() {
 =======
           content="Layanan pengolahan dan daur ulang biji plastik terbaik dan termurah. Dapatkan hasil berkualitas dengan teknologi modern."
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+          content="MP PLAST menyediakan layanan pengolahan dan daur ulang biji plastik terbaik dan termurah. Dapatkan hasil berkualitas dengan teknologi modern."
+>>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         />
         <meta property="og:url" content="https://jasaprosesbijiplastik.biz.id/" />
         <meta property="og:type" content="website" />
@@ -94,6 +102,7 @@ function Home() {
           name="twitter:description"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           content="MP. PLAST menyediakan layanan pengolahan dan daur ulang biji plastik berkualitas dan termurah di Indonesia. Proses cepat, hasil unggulan."
 =======
           content="Daur ulang biji plastik berkualitas di Indonesia. Proses cepat, hasil unggulan."
@@ -101,6 +110,9 @@ function Home() {
 =======
           content="Daur ulang biji plastik berkualitas dan termurah di Indonesia. Proses cepat, hasil unggulan."
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+          content="MP. PLAST menyediakan layanan pengolahan dan daur ulang biji plastik berkualitas dan termurah di Indonesia. Proses cepat, hasil unggulan."
+>>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         />
         <meta name="twitter:image" content="https://jasaprosesbijiplastik.biz.id/assets/1-Bt62zgc6.jpg" />
 
@@ -188,12 +200,12 @@ function Home() {
 
           {/* TikTok script */}
           <script async src="https://www.tiktok.com/embed.js"></script>
-        <RevealOnScroll delay={0.2}>
+        <RevealOnScroll delay={0.1}>
           <Who />
         </RevealOnScroll>
         </div>
 
-      <RevealOnScroll delay={0.4}>
+      <RevealOnScroll delay={0.2}>
         <TickerGallery />
       </RevealOnScroll>
 >>>>>>> 7f91838 (new layout)
