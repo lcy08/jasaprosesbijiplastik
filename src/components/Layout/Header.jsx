@@ -59,17 +59,18 @@ function Header() {
             className={`sticky top-3 z-50 transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-[calc(100%+10%)]'} md:translate-y-0 ${isAtTop ? 'opacity-100' : 'opacity-80'}`}
             style={{ willChange: 'transform' }}
         >
-            <section className="bg-background mx-3 md:mx-9 p-2 md:py-1 md:px-4 rounded-2xl flex flex-row items-start gap-2 md:gap-6">
+            <section className="bg-background mx-3 md:mx-9 p-2 md:py-1 md:px-4 rounded-2xl flex flex-row items-center gap-2 md:gap-6">
                 {/* Brand/Logo on the left */}
-                <div className="flex-none order-0 md:mr-4">
-                  <span className="inline-flex items-center justify-center bg-white/90 rounded-lg p-1 md:p-1.5 shadow-sm">
+                <div className="flex text-start items-center justify-start order-0 md:mr-4">
                     <img
                       src={logo}
                       alt="Jasa Proses Biji Plastik Logo"
-                      className="h-8 w-8 md:h-10 md:w-10 object-contain"
+                      className="h-12 w-12 md:h-15 md:w-15 object-cover size-30 bg-white/80 rounded-xl"
                       loading="lazy"
                     />
-                  </span>
+                    <p className="font-semibold font-poppins text-2xl md:text-4xl ml-2 md:ml-3 mx-0 text-white">
+                      MP. PLAST
+                    </p>
                 </div>
                 <div className=" hidden md:flex-1 md:flex md:items-center md:justify-start">
                   {/* Empty for spacing, keeps nav centered on desktop */}

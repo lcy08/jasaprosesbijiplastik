@@ -23,10 +23,10 @@ const Gallery = () => {
   return (
     <main className="text-gray-800">
       <Helmet>
-        <title>Galeri | Jasa Proses Biji Plastik</title>
+        <title>Galeri | MP. PLAST - Jasa Proses Biji Plastik Termurah</title>
         <meta
           name="description"
-          content="Daftar harga layanan utama Jasa Proses Biji Plastik. Untuk penawaran khusus, silakan hubungi kami."
+          content="Lihat galeri MP. PLAST dalam memproses biji plastik"
         />
       </Helmet>
 

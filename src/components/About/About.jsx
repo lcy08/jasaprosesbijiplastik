@@ -21,10 +21,10 @@ function About() {
   return (
     <main className="text-gray-800">
       <Helmet>
-        <title>Tentang Kami | Jasa Proses Biji Plastik</title>
+        <title>Tentang Kami | MP.PLAST - Jasa Proses Biji Plastik Termurah </title>
         <meta
           name="description"
-          content="Pelajari lebih lanjut tentang Jasa Proses Biji Plastik—visi, misi, tim, dan komitmen kami terhadap keberlanjutan."
+          content="Pelajari lebih lanjut tentang MP.PLAST yang bergerak di bidang jasa proses biji plastik. Temukan informasi tentang visi, misi, dan komitmen kami."
         />
       </Helmet>
 

@@ -31,10 +31,10 @@ function Contact() {
   return (
     <main className="text-gray-800">
       <Helmet>
-        <title>Kontak | Jasa Proses Biji Plastik</title>
+        <title>Kontak | MP.PLAST - Jasa Proses Biji Plastik Termurah</title>
         <meta
           name="description"
-          content="Hubungi kami untuk layanan pengolahan biji plastik—telepon, email, atau kirim pesan lewat formulir kontak."
+          content="MP. PLAST - Hubungi kami untuk layanan pengolahan biji plastik — telepon, email, atau kirim pesan via WhatsApp."
         />
       </Helmet>
 
