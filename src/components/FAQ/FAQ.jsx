@@ -63,23 +63,44 @@ const fadeUp = {
 };
 
 function FAQ() {
-  const faqs = [
+const faqs = [
     {
-      q: "Apa saja jenis plastik yang dapat diproses?",
-      a: "Kami menerima berbagai jenis limbah plastik industri seperti HDPE, LDPE, PP, dan PET."
+      q: "Jenis plastik apa yang dapat diproses oleh MP. PLAST?",
+      a: "Kami khusus memproses limbah plastik jenis PP (Polypropylene) dan ABS (Acrylonitrile Butadiene Styrene)."
     },
     {
-      q: "Bagaimana cara kerja layanan daur ulang plastik?",
-      a: "Limbah plastik dikumpulkan, dicacah, dicuci, dan diproses menjadi biji plastik berkualitas siap pakai."
+      q: "Bagaimana proses kerja layanan daur ulang plastik di MP. PLAST?",
+      a: "Limbah plastik dikumpulkan, dicacah, dicuci, kemudian dilelehkan menggunakan mesin khusus menjadi biji plastik berkualitas."
     },
     {
       q: "Apakah ada minimum jumlah limbah yang bisa diproses?",
-      a: "Kami melayani baik dalam jumlah kecil maupun besar, silakan hubungi kami untuk detail lebih lanjut."
+      a: "Kami menerima pemrosesan dalam jumlah kecil maupun besar, dengan kapasitas mesin mencapai 12 ton per hari. Hubungi kami untuk informasi lebih lanjut."
     },
     {
+<<<<<<< HEAD
       q: "Bagaimana cara mendapatkan penawaran harga?",
       a: "Anda dapat mengunjungi halaman Pricing atau menghubungi kami langsung melalui kontak yang tersedia."
 >>>>>>> dbc3f0b (del services, add faq and pricing)
+=======
+      q: "Bagaimana cara mendapatkan informasi harga?",
+      a: 'Silakan hubungi kami langsung melalui <a href="https://wa.me/6281290029538" target="_blank" class="text-jungle-green-400  underline">WhatsApp</a> untuk mendapatkan penawaran harga secara personal.'
+    },
+    {
+      q: "Apakah MP. PLAST menerima limbah plastik rumah tangga?",
+      a: "Saat ini kami hanya menerima limbah plastik industri jenis PP dan ABS."
+    },
+    {
+      q: "Apakah hasil daur ulang dapat digunakan kembali untuk produksi?",
+      a: "Ya, biji plastik hasil daur ulang kami berkualitas tinggi dan siap digunakan kembali dalam proses produksi."
+    },
+    {
+      q: "Berapa lama waktu proses daur ulang plastik di MP. PLAST?",
+      a: "Waktu proses tergantung pada volume limbah dan kondisi material, namun kami berkomitmen untuk proses yang cepat dan efisien."
+    },
+    {
+      q: "Di mana lokasi MP. PLAST dan apakah bisa mengantar limbah langsung?",
+      a: "Kami berlokasi di area strategis industri dan menerima pengantaran langsung. Hubungi kami untuk koordinasi pengiriman."
+>>>>>>> 37d3e48 (favicon, logo items, height who)
     }
   ];
 
@@ -129,6 +150,7 @@ function FAQ() {
               <li key={idx} className="p-6 rounded-2xl shadow-md bg-green-50/90 backdrop-blur">
                 <h3 className="font-semibold text-lg mb-2 text-jungle-green-800">{faq.q}</h3>
                 <p className="text-gray-700"><div dangerouslySetInnerHTML={{ __html: faq.a }} /></p>
+<<<<<<< HEAD
               </li>
             ))}
           </ul>
@@ -196,6 +218,8 @@ function FAQ() {
               <li key={idx} className="p-6 rounded-2xl shadow-md bg-green-50/90 backdrop-blur">
                 <h3 className="font-semibold text-lg mb-2 text-jungle-green-800">{faq.q}</h3>
                 <p className="text-gray-700">{faq.a}</p>
+=======
+>>>>>>> 37d3e48 (favicon, logo items, height who)
               </li>
             ))}
           </ul>

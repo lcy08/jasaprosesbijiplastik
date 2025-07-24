@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import plastics from '../assets/logo.png'
 =======
 import plastics from '../assets/plastics.jpg'
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+import plastics from '../assets/logo.png'
+>>>>>>> 37d3e48 (favicon, logo items, height who)
 
 function Hero() {
     return (
@@ -42,6 +46,7 @@ function Hero() {
                     src={plastics}
                     alt="Proses kerja MP. PLAST"
 <<<<<<< HEAD
+<<<<<<< HEAD
                     className="w-full h-full object-contain blur-sm"
                   />
                   <div className="absolute inset-0 bg-black/30" />
@@ -50,6 +55,11 @@ function Hero() {
                   />
                   <div className="absolute inset-0 bg-black/40" />
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+                    className="w-full h-full object-contain blur-sm"
+                  />
+                  <div className="absolute inset-0 bg-black/30" />
+>>>>>>> 37d3e48 (favicon, logo items, height who)
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-xl font-semibold">Komitmen Kami, Untuk Anda</h3>
                   </div>

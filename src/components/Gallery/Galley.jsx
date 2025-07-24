@@ -51,6 +51,7 @@ const Gallery = () => {
           name="description"
           content="Lihat galeri MP. PLAST dalam memproses biji plastik"
         />
+<<<<<<< HEAD
         <link
           rel="canonical"
           href="https://jasaprosesbijiplastik.biz.id/gallery"
@@ -77,6 +78,9 @@ function Gallery() {
           content="Lihat galeri MP. PLAST dalam memproses biji plastik"
 >>>>>>> 03e2837 (Logo and MP.PLAST Fokus)
         />
+=======
+        <link rel="canonical" href="https://jasaprosesbijiplastik.biz.id/gallery" />
+>>>>>>> 37d3e48 (favicon, logo items, height who)
       </Helmet>
 
       <Header />

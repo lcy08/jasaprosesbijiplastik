@@ -173,19 +173,19 @@ function Home() {
       <BackTop />
       <Hero />
       
-      <div className="relative grid grid-cols-1 md:flex justify-center md:gap-10 mt-10 mb-10">
+      <div className="relative flex flex-col md:flex-row items-center md:items-stretch gap-y-10 justify-center md:gap-10 mt-10 mb-10">
         
       <RevealOnScroll delay={0}>
         {/* TikTok Embed Container */}
-        <div className="relative mb-10 mx-5 md:mb-0 z-10 bg-white/90 dark:bg-black/90 border border-gray-300 dark:border-gray-700 shadow-2xl rounded-2xl w-[90dvw] max-w-md overflow-hidden">
+        <div className="relative mx-5 justify-center items-center h-full text-center md:mb-0 z-10 bg-white/90 dark:bg-black/90 border border-gray-300 dark:border-gray-700 shadow-2xl rounded-2xl w-[80dvw] max-w-md overflow-hidden">
             <blockquote
-              className="tiktok-embed w-full"
+              className="tiktok-embed w-full h-full flex items-center justify-center"
               cite="https://www.tiktok.com/@mp.plast_21"
               data-unique-id="mp.plast_21"
               data-embed-from="embed_page"
               data-embed-type="creator"
             >
-              <section className="p-2">
+              <section className="p-2 w-full h-full flex items-center justify-center">
                 <a
                   target="_blank"
                   href="https://www.tiktok.com/@mp.plast_21?refer=creator_embed"
