@@ -31,7 +31,7 @@ function Services() {
                         box="0 0 24 24"/>
 
                 <Item  title="Konsultasi Gratis"
-                        description="Diskusikan kebutuhan daur ulang Anda dengan tim ahli kami tanpa biaya tambahan."
+                        description="Diskusikan kebutuhan daur ulang Anda dengan tim kami tanpa biaya tambahan."
                         icon="M24,31.36c-4.059,0-7.36-3.302-7.36-7.36c0-1.171,0.283-2.333,0.818-3.362
 	c0.438-0.861,1.044-1.626,1.776-2.246c-1.09-1.024-2.397-1.82-3.803-2.312c-0.136-0.047-0.23-0.171-0.24-0.314
 	c-0.01-0.143,0.065-0.279,0.193-0.345c2.496-1.293,4.045-3.818,4.045-6.59c0-4.119-3.333-7.47-7.43-7.47
@@ -51,7 +51,7 @@ function Services() {
 	C28,2.4,27.6,2,27,2z M26,28H8c-1.1,0-2-0.9-2-2s0.9-2,2-2h18V28z"
                         box="0 0 32 32"/>
                 <Item  title="Pengolahan Plastik PP & ABS"
-                        description="Kami menerima berbagai jenis limbah plastik seperti HDPE, LDPE, PP, dan PET untuk diolah menjadi biji plastik berkualitas."
+                        description="Kami menerima jenis limbah plastik PP dan ABS  untuk diolah menjadi biji plastik berkualitas."
                         icon="M16,7.36H2C1.801,7.36,1.64,7.199,1.64,7V2c0-0.199,0.161-0.36,0.36-0.36h14c0.199,0,0.36,0.161,0.36,0.36v5
 		C16.36,7.199,16.199,7.36,16,7.36z M2.36,6.64h13.28V2.36H2.36V6.64z M10,3.64H4v0.72h6V3.64z M16,14.36H2
 		c-0.199,0-0.36-0.161-0.36-0.36V9c0-0.199,0.161-0.36,0.36-0.36h14c0.199,0,0.36,0.161,0.36,0.36v5
