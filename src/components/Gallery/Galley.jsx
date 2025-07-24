@@ -28,6 +28,7 @@ const Gallery = () => {
           name="description"
           content="Lihat galeri MP. PLAST dalam memproses biji plastik"
         />
+        <link rel="canonical" href="https://jasaprosesbijiplastik.biz.id/gallery" />
       </Helmet>
 
       <Header />

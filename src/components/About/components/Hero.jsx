@@ -1,4 +1,4 @@
-import plastics from '../assets/plastics.jpg'
+import plastics from '../assets/logo.png'
 
 function Hero() {
     return (
@@ -37,9 +37,9 @@ function Hero() {
                   <img
                     src={plastics}
                     alt="Proses kerja MP. PLAST"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain blur-sm"
                   />
-                  <div className="absolute inset-0 bg-black/40" />
+                  <div className="absolute inset-0 bg-black/30" />
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-xl font-semibold">Komitmen Kami, Untuk Anda</h3>
                   </div>
