@@ -36,6 +36,7 @@ function Contact() {
           name="description"
           content="MP. PLAST - Hubungi kami untuk layanan pengolahan biji plastik — telepon, email, atau kirim pesan via WhatsApp."
         />
+        <link rel="canonical" href="https://jasaprosesbijiplastik.biz.id/contact" />
       </Helmet>
 
       <Header />
@@ -68,18 +69,18 @@ function Contact() {
         >
             <h2 className="text-2xl font-semibold mb-6">Hubungi Langsung</h2>
             <div className="space-y-4">
-              <a href="mailto:info@mail.com" className="block text-blue-700 hover:underline text-lg font-medium">Email: info@mail.com</a>
+              {/* <a href="mailto:info@mail.com" className="block text-blue-700 hover:underline text-lg font-medium">Email: info@mail.com</a> */}
               <a href="tel:+6281290029538" className="block text-green-700 hover:underline text-lg font-medium">Telepon: +62 812-9002-9538</a>
               <a href="https://wa.me/6281290029538" target="_blank" rel="noopener noreferrer" className="block text-green-600 hover:underline text-lg font-medium">Chat via WhatsApp</a>
               <p className="text-gray-700">Alamat: Jl. Raya Kosambi Timur. No.36, Kosambi Timur., Kec. Kosambi, Kabupaten Tangerang, Banten 15213</p>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
-              <button
+              {/* <button
                 onClick={() => copy("email", contactInfo.email)}
                 className="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline border border-blue-200 rounded px-4 py-2"
               >
                 <Clipboard className="w-4 h-4" /> {copied === "email" ? "Email Tersalin!" : "Salin Email"}
-              </button>
+              </button> */}
               <button
                 onClick={() => copy("phone", contactInfo.phone)}
                 className="inline-flex items-center gap-2 text-sm text-green-600 hover:underline border border-green-200 rounded px-4 py-2"

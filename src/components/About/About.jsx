@@ -26,6 +26,7 @@ function About() {
           name="description"
           content="Pelajari lebih lanjut tentang MP.PLAST yang bergerak di bidang jasa proses biji plastik. Temukan informasi tentang visi, misi, dan komitmen kami."
         />
+        <link rel="canonical" href="https://jasaprosesbijiplastik.biz.id/about" />
       </Helmet>
 
       <Header />
