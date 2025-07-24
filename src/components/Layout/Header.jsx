@@ -66,7 +66,7 @@ function Header() {
                       src={logo}
                       alt="Jasa Proses Biji Plastik Logo"
                       className="h-12 w-12 object-cover size-30 bg-white/80 rounded-xl"
-                      loading="lazy"
+                      fetchPriority="high"
                     />
                     <p className="font-semibold font-poppins text-2xl md:text-4xl ml-2 md:ml-3 mx-0 text-white">
                       MP. PLAST
