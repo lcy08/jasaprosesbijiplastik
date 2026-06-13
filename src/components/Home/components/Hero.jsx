@@ -38,6 +38,9 @@ function Hero(){
                 </h1>
                 <p className="text-gray-700 text-lg">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e921d0 (removed ABS)
                     MP. PLAST hadir dengan teknologi modern untuk memproses biji plastik PP — bersih, stabil, dan siap pakai untuk segala kebutuhan industri.
                 </p>
                 <p className="text-gray-600 text-sm">
