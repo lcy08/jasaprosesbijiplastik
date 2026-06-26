@@ -1,6 +1,9 @@
 // src/data/media.js
 const media = [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a7ecc27 (media 2)
   {
     id: 1,
     type: "image",
@@ -12,62 +15,95 @@ const media = [
     id: 2,
     type: "video/mp4",
     src: "/Gallery/2.mp4",
+<<<<<<< HEAD
     alt: "Video",
+=======
+    alt: "Video 1",
+>>>>>>> a7ecc27 (media 2)
     category: "Pencucian",
   },
   {
     id: 3,
     type: "image",
     src: "/Gallery/3.jpg",
+<<<<<<< HEAD
     alt: "Pic",
+=======
+    alt: "Pic 2",
+>>>>>>> a7ecc27 (media 2)
     category: "Penggilingan",
   },
   {
     id: 4,
     type: "video/mp4",
     src: "/Gallery/4.mp4",
+<<<<<<< HEAD
     alt: "Video",
+=======
+    alt: "Video 2",
+>>>>>>> a7ecc27 (media 2)
     category: "Penggilingan",
   },
   {
     id: 5,
     type: "video/mp4",
     src: "/Gallery/5.mp4",
+<<<<<<< HEAD
     alt: "Video",
+=======
+    alt: "Video 3",
+>>>>>>> a7ecc27 (media 2)
     category: "Hasil",
   },
   {
     id: 6,
     type: "video/mp4",
     src: "/Gallery/6.mp4",
+<<<<<<< HEAD
     alt: "Video",
+=======
+    alt: "Video 4",
+>>>>>>> a7ecc27 (media 2)
     category: "Hasil",
   },
   {
     id: 7,
     type: "video/mp4",
     src: "/Gallery/7.mp4",
+<<<<<<< HEAD
     alt: "Video",
+=======
+    alt: "Video 5",
+>>>>>>> a7ecc27 (media 2)
     category: "Hasil",
   },
   {
     id: 8,
     type: "image",
     src: "/Gallery/8.jpeg",
+<<<<<<< HEAD
     alt: "Pic",
+=======
+    alt: "Pic 3",
+>>>>>>> a7ecc27 (media 2)
     category: "Penyimpanan",
   },
   {
     id: 9,
     type: "video/mp4",
     src: "/Gallery/9.mp4",
+<<<<<<< HEAD
     alt: "Video",
+=======
+    alt: "Video 6",
+>>>>>>> a7ecc27 (media 2)
     category: "Penyimpanan",
   },
   {
     id: 10,
     type: "video/mp4",
     src: "/Gallery/10.mp4",
+<<<<<<< HEAD
     alt: "Video",
     category: "Penyimpanan",
   },
@@ -189,6 +225,11 @@ const media = [
   { id: 3, type: 'image', src: '/Gallery/3.jpg', alt: 'Pic 2', category: 'Penggilingan' },
   { id: 4, type: 'video/mp4', src: '/Gallery/4.mp4', alt: 'Video 2', category: 'Penggilingan' },
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+    alt: "Video 7",
+    category: "Penyimpanan",
+  },
+>>>>>>> a7ecc27 (media 2)
   // ... up to 50
 ];
 

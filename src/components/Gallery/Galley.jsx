@@ -25,7 +25,7 @@ import { motion } from "framer-motion";
 >>>>>>> 7f91838 (new layout)
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 }, 
+  hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 }
 };
 
@@ -276,9 +276,9 @@ function Gallery() {
 
       {/* Media Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {filtered.map((item, i) => (
+        {filtered.map((item) => (
           <div
-            key={i}
+            key={item.id}
             className="relative cursor-pointer group"
             onClick={() => setActiveMedia(i)}
           >
