@@ -94,7 +94,7 @@ const media = [
   {
     id: 14,
     type: "image",
-    src: "/Gallery/14.mp4",
+    src: "/Gallery/14.jpeg",
     alt: "Pic",
     category: "Hasil",
   },
