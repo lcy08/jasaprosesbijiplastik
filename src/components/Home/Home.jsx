@@ -9,11 +9,16 @@ import '/src/index.css';
 import RevealOnScroll from '../Layout/RevealOnScroll';
 
 function Home() {
-  return(
+  return (
     <>
+      {/* TikTok script */}
+      <script async src="https://www.tiktok.com/embed.js"></script>
       <Helmet>
         {/* Title & Description */}
-        <title>MP. PLAST - Jasa Proses Biji Plastik Termurah | Pengolahan Plastik Berkualitas</title>
+        <title>
+          MP. PLAST - Jasa Proses Biji Plastik Termurah | Pengolahan Plastik
+          Berkualitas
+        </title>
         <meta
           name="description"
           content="MP.PLAST adalah perusahaan yang menyediakan layanan proses biji plastik terbaik dan termurah di Indonesia. Daur ulang dan pengolahan plastik dengan teknologi modern dan hasil berkualitas."
@@ -34,9 +39,15 @@ function Home() {
           property="og:description"
           content="MP PLAST menyediakan layanan pengolahan dan daur ulang biji plastik terbaik dan termurah. Dapatkan hasil berkualitas dengan teknologi modern."
         />
-        <meta property="og:url" content="https://jasaprosesbijiplastik.biz.id/" />
+        <meta
+          property="og:url"
+          content="https://jasaprosesbijiplastik.biz.id/"
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://jasaprosesbijiplastik.biz.id/assets/1-Bt62zgc6.jpg" />
+        <meta
+          property="og:image"
+          content="https://jasaprosesbijiplastik.biz.id/assets/1-Bt62zgc6.jpg"
+        />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +56,10 @@ function Home() {
           name="twitter:description"
           content="MP. PLAST menyediakan layanan pengolahan dan daur ulang biji plastik berkualitas dan termurah di Indonesia. Proses cepat, hasil unggulan."
         />
-        <meta name="twitter:image" content="https://jasaprosesbijiplastik.biz.id/assets/1-Bt62zgc6.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://jasaprosesbijiplastik.biz.id/assets/1-Bt62zgc6.jpg"
+        />
 
         {/* Language and Charset */}
         <meta charSet="utf-8" />
@@ -54,12 +68,11 @@ function Home() {
       <Header />
       <BackTop />
       <Hero />
-      
+
       <div className="relative flex flex-col md:flex-row items-center md:items-stretch gap-y-10 justify-center md:gap-10 mt-10 mb-10">
-        
-      <RevealOnScroll delay={0}>
-        {/* TikTok Embed Container */}
-        <div className="relative mx-5 justify-center items-center h-full text-center md:mb-0 z-10 bg-white/90 dark:bg-black/90 border border-gray-300 dark:border-gray-700 shadow-2xl rounded-2xl w-[80dvw] max-w-md overflow-hidden">
+        <RevealOnScroll delay={0}>
+          {/* TikTok Embed Container */}
+          <div className="relative mx-5 justify-center items-center h-full text-center md:mb-0 z-10 bg-white/90 dark:bg-black/90 border border-gray-300 dark:border-gray-700 shadow-2xl rounded-2xl w-[80dvw] max-w-md overflow-hidden">
             <blockquote
               className="tiktok-embed w-full h-full flex items-center justify-center"
               cite="https://www.tiktok.com/@mp.plast_21"
@@ -78,14 +91,12 @@ function Home() {
               </section>
             </blockquote>
           </div>
-          </RevealOnScroll>
+        </RevealOnScroll>
 
-          {/* TikTok script */}
-          <script async src="https://www.tiktok.com/embed.js"></script>
         <RevealOnScroll delay={0.1}>
           <Who />
         </RevealOnScroll>
-        </div>
+      </div>
 
       <RevealOnScroll delay={0.2}>
         <TickerGallery />
