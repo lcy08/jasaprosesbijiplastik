@@ -72,20 +72,18 @@ function Header() {
                       MP. PLAST
                     </p>
                 </div>
-                <div className=" hidden md:flex-1 md:flex md:items-center md:justify-start">
-                  {/* Empty for spacing, keeps nav centered on desktop */}
-                </div>
+                
                 {/* Hamburger: in-bar on all screens */}
-                <div className="flex flex-none order-2 md:order-none ml-auto md:ml-0">
+                <div className="flex flex-none order-2 md:order-none md:ml-0">
                   <Hamburger toggle={toggleMenu} isMenuOpen={isMenuOpen} />
                 </div>
                 <nav
                   aria-label="Main navigation"
-                  className="w-full md:w-auto"
+                  className="ml-auto sm:w-full md:w-auto"
                 >
                   <div
                     className={`items-center justify-start md:justify-center md:mr-8 w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
-                     ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}`}
+                     ${isMenuOpen ? ' max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}`}
                     id="navbar"
                     aria-expanded={isMenuOpen}
                   >
