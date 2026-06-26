@@ -92,6 +92,7 @@ function Header() {
                       MP. PLAST
                     </p>
                 </div>
+<<<<<<< HEAD
                 <div className=" hidden md:flex-1 md:flex md:items-center md:justify-start">
 =======
 =======
@@ -161,12 +162,16 @@ function Header() {
 >>>>>>> dbc3f0b (del services, add faq and pricing)
                   {/* Empty for spacing, keeps nav centered on desktop */}
                 </div>
+=======
+                
+>>>>>>> 437f799 (navbar)
                 {/* Hamburger: in-bar on all screens */}
-                <div className="flex flex-none order-2 md:order-none ml-auto md:ml-0">
+                <div className="flex flex-none order-2 md:order-none md:ml-0">
                   <Hamburger toggle={toggleMenu} isMenuOpen={isMenuOpen} />
                 </div>
                 <nav
                   aria-label="Main navigation"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                   className="w-full md:w-auto"
@@ -190,6 +195,13 @@ function Header() {
                     className={`items-center justify-start md:justify-center md:mr-8 w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
 >>>>>>> 7ea7f57 (loading lazy)
                      ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}`}
+=======
+                  className="ml-auto sm:w-full md:w-auto"
+                >
+                  <div
+                    className={`items-center justify-start md:justify-center md:mr-8 w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in-out overflow-hidden
+                     ${isMenuOpen ? ' max-h-96 opacity-100' : 'max-h-0 opacity-0 md:max-h-full md:opacity-100'}`}
+>>>>>>> 437f799 (navbar)
                     id="navbar"
                     aria-expanded={isMenuOpen}
                   >
