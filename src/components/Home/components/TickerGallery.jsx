@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import tickerItems from '../../../data/media'
 
 import { XMarkIcon } from '@heroicons/react/24/outline';
+<<<<<<< HEAD
 =======
 import one from '../assets/Gallery/1.jpg';
 import two from '../assets/Gallery/2.mp4';
@@ -22,6 +23,8 @@ const tickerItems = [
 =======
 import tickerItems from '../../../data/media'
 >>>>>>> d0d54ba (about page, gallery and 404 redirect)
+=======
+>>>>>>> e23649b (update)
 
 // Ticker width will auto repeat items for seamless scroll
 const TickerGallery = () => {
@@ -30,24 +33,32 @@ const TickerGallery = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const selectedMedia = tickerItems[selectedIndex];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   const [isMediaOpen, setIsMediaOpen] = useState(false);
 
 >>>>>>> 7f91838 (new layout)
+=======
+>>>>>>> e23649b (update)
 
   useEffect(() => {
     const animateTicker = async () => {
       while (true) {
         await controls.start({
 <<<<<<< HEAD
+<<<<<<< HEAD
           x: ["0%", "-25%"],
 =======
           x: ["0%", "-50%"],
 >>>>>>> 7f91838 (new layout)
+=======
+          x: ["0%", "-25%"],
+>>>>>>> e23649b (update)
           transition: {
             repeat: Infinity,
             repeatType: "loop",
             ease: "linear",
+<<<<<<< HEAD
 <<<<<<< HEAD
             duration: 60,
           },
@@ -58,6 +69,11 @@ const TickerGallery = () => {
         });
         controls.set({ x: 0 }); // Reset
 >>>>>>> 7f91838 (new layout)
+=======
+            duration: 60,
+          },
+        });
+>>>>>>> e23649b (update)
       }
     };
 
@@ -66,10 +82,14 @@ const TickerGallery = () => {
 
   const handlePause = () => controls.stop();
 <<<<<<< HEAD
+<<<<<<< HEAD
   const handleResume = () => controls.start({ x: '-25%', transition: { duration: 60, ease: 'linear' } });
 =======
   const handleResume = () => controls.start({ x: '-50%', transition: { duration: 15, ease: 'linear' } });
 >>>>>>> 7f91838 (new layout)
+=======
+  const handleResume = () => controls.start({ x: '-25%', transition: { duration: 60, ease: 'linear' } });
+>>>>>>> e23649b (update)
 
   return (
     <section id="gallery" className="relative bg-[#fdfbd4]">
@@ -82,6 +102,9 @@ const TickerGallery = () => {
         </p>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e23649b (update)
       <div className="w-full min-h-[50vh] overflow-hidden whitespace-nowrap py-6 bg-neutral-100">
         <motion.div
           className="flex gap-4 w-max"
@@ -89,6 +112,7 @@ const TickerGallery = () => {
           initial={{ x: 0 }}
           onMouseEnter={handlePause}
           onMouseLeave={handleResume}
+<<<<<<< HEAD
         >
           {[
             ...tickerItems,
@@ -283,12 +307,108 @@ const TickerGallery = () => {
         <Link
           to="/gallery"
           className="px-6 py-3 bg-green-700 text-white rounded-xl hover:bg-green-800 transition-colors duration-300 shadow-md"
+=======
+>>>>>>> e23649b (update)
         >
-          More Photos and Videos
-        </Link>
+          {[
+            ...tickerItems,
+            ...tickerItems,
+            ...tickerItems,
+            ...tickerItems,
+            ...tickerItems,
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => {
+                setSelectedIndex(idx); // fix index;
+              }}
+              className="cursor-pointer transition hover:scale-105"
+            >
+              {item.type === "video/mp4" ? (
+                <video
+                  src={item.src}
+                  muted
+                  playsInline
+                  autoPlay
+                  loop
+                  className="h-[250px] w-auto object-cover rounded-lg"
+                />
+              ) : (
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="h-[250px] w-auto object-cover rounded-lg"
+                />
+              )}
+            </div>
+          ))}
+        </motion.div>
+        {selectedIndex && (
+          <div
+            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 backdrop-blur"
+          >
+            <div className="relative max-w-4xl w-full max-h-full bg-black rounded-xl">
+              {/* Close Button */}
+              <button
+                className="cursor-pointer absolute top-2 right-2 text-white bg-red-600 rounded-full px-3 py-1 z-10 font-bold"
+                onClick={() => setSelectedIndex(null)}
+              >
+                <XMarkIcon height="16px" width="16px" />
+              </button>
+
+              {/* Previous Button */}
+              {selectedIndex > 0 && (
+                <button
+                  className="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 text-white bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-full z-50"
+                  onClick={() => setSelectedIndex((prev) => prev - 1)}
+                >
+                  ‹
+                </button>
+              )}
+
+              {/* Next Button */}
+              {selectedIndex < tickerItems.length - 1 && (
+                <button
+                  className="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 text-white bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-full z-50"
+                  onClick={() => setSelectedIndex((prev) => prev + 1)}
+                >
+                  ›
+                </button>
+              )}
+
+              {/* Media Content */}
+              {selectedMedia.type === "video/mp4" ? (
+                <video
+                  src={selectedMedia.src}
+                  autoPlay
+                  controls
+                  className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg object-contain"
+                />
+              ) : (
+                <img
+                  src={selectedMedia.src}
+                  alt="Gallery media"
+                  className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg object-contain"
+                />
+              )}
+            </div>
+          </div>
+        )}
+
+        <div className="flex justify-center mt-10">
+          <Link
+            to="/gallery"
+            className="px-6 py-3 bg-green-700 text-white rounded-xl hover:bg-green-800 transition-colors duration-300 shadow-md"
+          >
+            More Photos and Videos
+          </Link>
+        </div>
       </div>
+<<<<<<< HEAD
     </div>
 >>>>>>> 7f91838 (new layout)
+=======
+>>>>>>> e23649b (update)
     </section>
   );
 };
