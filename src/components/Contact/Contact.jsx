@@ -139,4 +139,4 @@ function Contact() {
     </main>
   );
 }
-export default Contact;
+export default Contact
