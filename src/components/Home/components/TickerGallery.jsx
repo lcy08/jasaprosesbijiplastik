@@ -204,7 +204,7 @@ const TickerGallery = () => {
             to="/gallery"
             className="px-6 py-3 bg-green-700 text-white rounded-xl hover:bg-green-800 transition-colors duration-300 shadow-md"
           >
-            More Photos and Videos
+            More Photos and Videos...
           </Link>
         </div>
       </div>
