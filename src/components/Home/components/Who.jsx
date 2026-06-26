@@ -1,17 +1,7 @@
 function Who() {
     return (
-<<<<<<< HEAD
-<<<<<<< HEAD
         <div className="rounded-2xl shadow-lg backdrop-blur items-center justify-center h-full flex flex-col bg-green-100 p-10">
             <h2 className="font-playfair font-bold text-3xl text-center">Siapa Kami?</h2>
-=======
-        <div className="rounded-2xl shadow-lg backdrop-blur min-h-[50vh] items-center justify-center bg-green-100 p-10">
-            <h2 className="mt-10 font-playfair font-bold text-3xl text-center">Siapa Kami?</h2>
->>>>>>> 7f91838 (new layout)
-=======
-        <div className="rounded-2xl shadow-lg backdrop-blur items-center justify-center h-full flex flex-col bg-green-100 p-10">
-            <h2 className="font-playfair font-bold text-3xl text-center">Siapa Kami?</h2>
->>>>>>> 37d3e48 (favicon, logo items, height who)
             <p className="mt-10 text-center text-gray-700 mb-6 max-w-2xl mx-auto font-sans">
                 MP. PLAST adalah produsen dan supplier biji plastik berkualitas tinggi untuk berbagai kebutuhan industri Anda. Setiap produk kami melalui proses seleksi dan kontrol mutu yang ketat. Kami menerima kerja sama dengan berbagai industri untuk menyediakan biji plastik yang sesuai dengan spesifikasi dan kebutuhan Anda.
             </p>
